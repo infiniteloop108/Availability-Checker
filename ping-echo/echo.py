@@ -19,14 +19,14 @@ def pcolor(arr, col):
 	else:
 		print arr;
 
-if len(sys.argv) == 2 and sys.argv[1] == 'help':
+if len(sys.argv) == 2 and sys.argv[1] == '--help':
 	pcolor('This tool echoes to a machine which runs the complementary ping service to check whether this machine is available', "b")
 	pcolor('Usage: python echo.py my_ip', "p")
 	sys.exit(0)
 
 if len(sys.argv) != 2:
 	pcolor('Wrong Format', "r")
-	print 'run: python echo.py help'
+	print 'run: python echo.py --help'
 	sys.exit(0)
 
 ip = sys.argv[1]

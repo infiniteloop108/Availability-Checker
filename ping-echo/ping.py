@@ -18,7 +18,7 @@ def pcolor(arr, col):
 	else:
 		print arr;
 
-if len(sys.argv) == 2 and sys.argv[1] == 'help':
+if len(sys.argv) == 2 and sys.argv[1] == '--help':
 	pcolor('This tool pings a machine which runs the complementary echo service to check whether that machine is available', "b")
 	pcolor('Usage: python ping.py ip_of_machine period(sec)', "p")
 	pcolor('Period is the time interval in seconds between pings', "")
@@ -27,7 +27,7 @@ if len(sys.argv) == 2 and sys.argv[1] == 'help':
 
 if len(sys.argv) != 3:
 	pcolor('Wrong Format', "r")
-	print 'run: python ping.py help'
+	print 'run: python ping.py --help'
 	sys.exit(0)
 
 def quitting(signal, frame):
