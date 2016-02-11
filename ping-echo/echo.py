@@ -9,7 +9,7 @@ def pcolor(arr, col):
 	if col == "p":
 		print '\033[95m' + arr + '\033[0m'
 	elif col == "g":
-		print '\033[95m' + arr + '\033[0m'
+		print '\033[92m' + arr + '\033[0m'
 	elif col == "r":
 		print '\033[91m' + arr + '\033[0m'
 	elif col == "b":
