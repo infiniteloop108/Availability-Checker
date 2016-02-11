@@ -1,6 +1,11 @@
 CS654 Assignment 4
 Akshay Aggarwal, 12068
 
+Installation:
+
+Install python and pip.
+Do pip install psutil
+
 
 
 
